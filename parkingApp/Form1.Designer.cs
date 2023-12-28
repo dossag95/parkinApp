@@ -37,20 +37,27 @@
             label7 = new Label();
             label8 = new Label();
             groupBox1 = new GroupBox();
-            txtPlaca = new TextBox();
-            txtHoraInicio = new MaskedTextBox();
             txtHoraFin = new MaskedTextBox();
+            txtHoraInicio = new MaskedTextBox();
+            txtPlaca = new TextBox();
             btnRegistrar = new Button();
             btnSalir = new Button();
             btnCancelar = new Button();
             lvRegistro = new ListView();
+            columnHeader1 = new ColumnHeader();
+            columnHeader2 = new ColumnHeader();
+            columnHeader3 = new ColumnHeader();
+            columnHeader4 = new ColumnHeader();
+            columnHeader5 = new ColumnHeader();
+            columnHeader6 = new ColumnHeader();
+            columnHeader7 = new ColumnHeader();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(268, 9);
+            label1.Location = new Point(195, 9);
             label1.Name = "label1";
             label1.Size = new Size(224, 15);
             label1.TabIndex = 0;
@@ -128,28 +135,12 @@
             groupBox1.Controls.Add(label8);
             groupBox1.Controls.Add(txtHoraFin);
             groupBox1.Controls.Add(txtHoraInicio);
-            groupBox1.Location = new Point(321, 37);
+            groupBox1.Location = new Point(381, 37);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(214, 100);
             groupBox1.TabIndex = 8;
             groupBox1.TabStop = false;
             groupBox1.Text = "FECHA Y HORA";
-            // 
-            // txtPlaca
-            // 
-            txtPlaca.Location = new Point(62, 34);
-            txtPlaca.Name = "txtPlaca";
-            txtPlaca.Size = new Size(74, 23);
-            txtPlaca.TabIndex = 0;
-            // 
-            // txtHoraInicio
-            // 
-            txtHoraInicio.Location = new Point(104, 41);
-            txtHoraInicio.Mask = "90:00";
-            txtHoraInicio.Name = "txtHoraInicio";
-            txtHoraInicio.Size = new Size(100, 23);
-            txtHoraInicio.TabIndex = 9;
-            txtHoraInicio.ValidatingType = typeof(DateTime);
             // 
             // txtHoraFin
             // 
@@ -160,6 +151,22 @@
             txtHoraFin.TabIndex = 10;
             txtHoraFin.ValidatingType = typeof(DateTime);
             // 
+            // txtHoraInicio
+            // 
+            txtHoraInicio.Location = new Point(104, 41);
+            txtHoraInicio.Mask = "90:00";
+            txtHoraInicio.Name = "txtHoraInicio";
+            txtHoraInicio.Size = new Size(100, 23);
+            txtHoraInicio.TabIndex = 9;
+            txtHoraInicio.ValidatingType = typeof(DateTime);
+            // 
+            // txtPlaca
+            // 
+            txtPlaca.Location = new Point(62, 34);
+            txtPlaca.Name = "txtPlaca";
+            txtPlaca.Size = new Size(74, 23);
+            txtPlaca.TabIndex = 0;
+            // 
             // btnRegistrar
             // 
             btnRegistrar.Location = new Point(12, 114);
@@ -168,6 +175,7 @@
             btnRegistrar.TabIndex = 11;
             btnRegistrar.Text = "REGISTRAR";
             btnRegistrar.UseVisualStyleBackColor = true;
+            btnRegistrar.Click += btnRegistrar_Click;
             // 
             // btnSalir
             // 
@@ -177,6 +185,7 @@
             btnSalir.TabIndex = 12;
             btnSalir.Text = "SALIR";
             btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
             // 
             // btnCancelar
             // 
@@ -186,21 +195,56 @@
             btnCancelar.TabIndex = 13;
             btnCancelar.Text = "CANCELAR";
             btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // lvRegistro
             // 
+            lvRegistro.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5, columnHeader6, columnHeader7 });
             lvRegistro.GridLines = true;
             lvRegistro.Location = new Point(12, 152);
             lvRegistro.Name = "lvRegistro";
-            lvRegistro.Size = new Size(523, 137);
+            lvRegistro.Size = new Size(583, 137);
             lvRegistro.TabIndex = 14;
             lvRegistro.UseCompatibleStateImageBehavior = false;
+            lvRegistro.View = View.Details;
+            // 
+            // columnHeader1
+            // 
+            columnHeader1.Text = "PLACA";
+            // 
+            // columnHeader2
+            // 
+            columnHeader2.Text = "FECHA";
+            // 
+            // columnHeader3
+            // 
+            columnHeader3.Text = "HORA DE INCIO";
+            columnHeader3.Width = 100;
+            // 
+            // columnHeader4
+            // 
+            columnHeader4.Text = "HORA SALIDA";
+            columnHeader4.Width = 100;
+            // 
+            // columnHeader5
+            // 
+            columnHeader5.Text = "HORAS TOTALES";
+            columnHeader5.Width = 100;
+            // 
+            // columnHeader6
+            // 
+            columnHeader6.Text = "COSTO/HORA";
+            columnHeader6.Width = 100;
+            // 
+            // columnHeader7
+            // 
+            columnHeader7.Text = "TOTAL";
             // 
             // frmEstacionamiento
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(568, 344);
+            ClientSize = new Size(612, 344);
             Controls.Add(lvRegistro);
             Controls.Add(btnCancelar);
             Controls.Add(btnSalir);
@@ -238,5 +282,12 @@
         private Button btnSalir;
         private Button btnCancelar;
         private ListView lvRegistro;
+        private ColumnHeader columnHeader1;
+        private ColumnHeader columnHeader2;
+        private ColumnHeader columnHeader3;
+        private ColumnHeader columnHeader4;
+        private ColumnHeader columnHeader5;
+        private ColumnHeader columnHeader6;
+        private ColumnHeader columnHeader7;
     }
 }
