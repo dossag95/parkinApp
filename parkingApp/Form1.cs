@@ -27,8 +27,8 @@ namespace parkingApp
             DateTime fecha = DateTime.Parse(lblFecha.Text);
             dia = fecha.ToString("dddd");
 
-            //Dependiendo del dia se cobrara mas Sabados y domingos es gratis
-            double costo = 0;
+            //Dependiendo del dia se cobrara Sabados y domingos es gratis
+            double costo = 800;
             switch (dia)
             {
                 case "Sunday":
@@ -44,7 +44,7 @@ namespace parkingApp
                     costo = 1;
                     break;
                 case "Thrusday":
-                    costo = 1000;
+                    costo = 1;
                     break;
                 case "Friday":
                     costo = 1;
