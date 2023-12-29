@@ -28,29 +28,29 @@ namespace parkingApp
             dia = fecha.ToString("dddd");
 
             //Dependiendo del dia se cobrara Sabados y domingos es gratis
-            double costo = 800;
+            double costo = 0;
             switch (dia)
             {
                 case "Sunday":
-                    costo = 1;
+                    costo = 0;
                     break;
                 case "Monday":
-                    costo = 1;
+                    costo = 950;
                     break;
                 case "Tuesday":
-                    costo = 1;
+                    costo = 950;
                     break;
                 case "Wednesday":
-                    costo = 1;
+                    costo = 950;
                     break;
                 case "Thrusday":
-                    costo = 1;
+                    costo = 950;
                     break;
                 case "Friday":
-                    costo = 1;
+                    costo = 950;
                     break;
                 case "Saturday":
-                    costo = 1;
+                    costo = 0;
                     break;
             }
             lblCosto.Text = costo.ToString("0.00");

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dossa\\OneDrive\\Documentos\\C#\\parkingApp\\parkingApp\\parkingApp.csproj": {}
+    "C:\\Users\\dossa\\OneDrive\\Documentos\\C#\\ParkingApp\\parkingApp\\parkingApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dossa\\OneDrive\\Documentos\\C#\\parkingApp\\parkingApp\\parkingApp.csproj": {
+    "C:\\Users\\dossa\\OneDrive\\Documentos\\C#\\ParkingApp\\parkingApp\\parkingApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dossa\\OneDrive\\Documentos\\C#\\parkingApp\\parkingApp\\parkingApp.csproj",
+        "projectUniqueName": "C:\\Users\\dossa\\OneDrive\\Documentos\\C#\\ParkingApp\\parkingApp\\parkingApp.csproj",
         "projectName": "parkingApp",
-        "projectPath": "C:\\Users\\dossa\\OneDrive\\Documentos\\C#\\parkingApp\\parkingApp\\parkingApp.csproj",
+        "projectPath": "C:\\Users\\dossa\\OneDrive\\Documentos\\C#\\ParkingApp\\parkingApp\\parkingApp.csproj",
         "packagesPath": "C:\\Users\\dossa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dossa\\OneDrive\\Documentos\\C#\\parkingApp\\parkingApp\\obj\\",
+        "outputPath": "C:\\Users\\dossa\\OneDrive\\Documentos\\C#\\ParkingApp\\parkingApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

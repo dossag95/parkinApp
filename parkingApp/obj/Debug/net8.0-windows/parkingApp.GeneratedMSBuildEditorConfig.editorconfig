@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = parkingApp
-build_property.ProjectDir = C:\Users\dossa\OneDrive\Documentos\C#\parkingApp\parkingApp\
+build_property.ProjectDir = C:\Users\dossa\OneDrive\Documentos\C#\ParkingApp\parkingApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
